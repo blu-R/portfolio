@@ -1,0 +1,16 @@
+.pos-ab {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+.top-100 {
+  top: 100%;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

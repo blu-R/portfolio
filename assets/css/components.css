@@ -1,0 +1,92 @@
+#logo {
+  font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.button {
+  font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  /* display: block; */
+  text-align: center;
+  border-radius: 4px;
+  transition-property: background-color, all;
+  transition-duration: 0.5s, 1s;
+  transition-timing-function: ease-in-out, ease;
+  transition-delay: 0s, 0s;
+  flex: 0 1 auto;
+}
+.btn-menu {
+  background-color: transparent;
+  border: 0;
+  font-size: 94%;
+}
+
+@font-face {
+  font-family: "brandon-grotesque"; /*The name you choose goes here*/
+  src: url(brandon-grotesque-light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brandon-grotesque"; /*The name you choose goes here*/
+  src: url(brandon-grotesque-black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Medium.eot");
+  src: local("MetaSerifPro-Medium"),
+    url("MetaSerifPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("MetaSerifPro-Medium.woff2") format("woff2"),
+    url("MetaSerifPro-Medium.woff") format("woff"),
+    url("MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro-Book";
+  src: url("MetaSerifPro-Book.eot");
+  src: local("MetaSerifPro-Book"),
+    url("MetaSerifPro-Book.eot?#iefix") format("embedded-opentype"),
+    url("MetaSerifPro-Book.woff2") format("woff2"),
+    url("MetaSerifPro-Book.woff") format("woff"),
+    url("MetaSerifPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Black.eot");
+  src: local("MetaSerifPro-Black"),
+    url("MetaSerifPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("MetaSerifPro-Black.woff2") format("woff2"),
+    url("MetaSerifPro-Black.woff") format("woff"),
+    url("MetaSerifPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Light.eot");
+  src: local("MetaSerifPro-Light"),
+    url("MetaSerifPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("MetaSerifPro-Light.woff2") format("woff2"),
+    url("MetaSerifPro-Light.woff") format("woff"),
+    url("MetaSerifPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Bold.eot");
+  src: local("MetaSerifPro-Bold"),
+    url("MetaSerifPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("MetaSerifPro-Bold.woff2") format("woff2"),
+    url("MetaSerifPro-Bold.woff") format("woff"),
+    url("MetaSerifPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
