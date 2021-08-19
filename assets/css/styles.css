@@ -1,3 +1,75 @@
+/* || Typography */
+
+@font-face {
+  font-family: "brandon-grotesque"; /*The name you choose goes here*/
+  src: url(../fonts/brandon-grotesque-light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "brandon-grotesque"; /*The name you choose goes here*/
+  src: url(../fonts/brandon-grotesque-black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("../fonts/MetaSerifPro-Medium.eot");
+  src: local("MetaSerifPro-Medium"),
+    url("../fonts/MetaSerifPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MetaSerifPro-Medium.woff2") format("woff2"),
+    url("../fonts/MetaSerifPro-Medium.woff") format("woff"),
+    url("../fonts/MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro-Book";
+  src: url("MetaSerifPro-Book.eot");
+  src: local("MetaSerifPro-Book"),
+    url("MetaSerifPro-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MetaSerifPro-Medium.woff2") format("woff2"),
+    url("../fonts/MetaSerifPro-Medium.woff") format("woff"),
+    url("../fonts/MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Black.eot");
+  src: local("MetaSerifPro-Black"),
+    url("MetaSerifPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MetaSerifPro-Medium.woff2") format("woff2"),
+    url("../fonts/MetaSerifPro-Medium.woff") format("woff"),
+    url("../fonts/MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Light.eot");
+  src: local("MetaSerifPro-Light"),
+    url("MetaSerifPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MetaSerifPro-Medium.woff2") format("woff2"),
+    url("../fonts/MetaSerifPro-Medium.woff") format("woff"),
+    url("../fonts/MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MetaSerifPro";
+  src: url("MetaSerifPro-Bold.eot");
+  src: local("MetaSerifPro-Bold"),
+    url("MetaSerifPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MetaSerifPro-Medium.woff2") format("woff2"),
+    url("../fonts/MetaSerifPro-Medium.woff") format("woff"),
+    url("../fonts/MetaSerifPro-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* || Header and Main Navigation */
+
 header {
   display: flex;
   position: absolute;
@@ -48,10 +120,13 @@ header {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+/* || HOME SECTION */
+
 #home {
   background-color: #d24d57;
   background-size: auto;
-  background-image: url("header-bg-640.jpg");
+  background-image: url("../img/header-bg-640.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 0px;
@@ -76,10 +151,7 @@ header {
   font-family: "MetaSerifPro", Georgia, serif;
   font-weight: 300;
   line-height: 1.30769em;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
+  transition: all 0.5s ease;
 }
 
 #home .check-work {
@@ -97,14 +169,8 @@ header {
   /* align-self: center; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
-}
+/* || PORTFOLIO-DESCRIPTION SECTION */
+
 #portfolio-desc {
   padding: 3.125em 0;
   border-bottom: 1px solid #f1f1f1;
@@ -125,6 +191,8 @@ h6 {
   margin-bottom: 0.625em;
   text-transform: uppercase;
 }
+
+/* || PORTFOLIO CONTENT SECTION */
 
 #portfolio-content {
   background: #fff;
@@ -216,9 +284,11 @@ h6 {
   font-size: 0.875em;
 }
 
+/* || ABOUT SECTION */
+
 #about {
   padding: 5em 0;
-  background: #016052 url(stream-640.jpg) no-repeat;
+  background: #016052 url(../img/stream-640.jpg) no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -253,6 +323,8 @@ h6 {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
+
+/* || CONTACT SECTION */
 
 #contact {
   padding: 3.125em 0;
@@ -366,6 +438,8 @@ h6 {
   transition-delay: 0s, 0s;
 }
 
+/* || FOOTER */
+
 footer {
   padding: 3.125em;
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
@@ -466,13 +540,19 @@ footer .container {
 
 @media (min-width: 639.98px) and (max-width: 1023.98px) {
   #home {
-    background-image: url("header-bg-1024.jpg");
+    background-image: url("../img/header-bg-1024.jpg");
+  }
+  #about {
+    background: #016052 url(../img/stream-1024.jpg) no-repeat;
   }
 }
 
 @media (min-width: 1023.98px) and (max-width: 3839.98px) {
   #home {
-    background-image: url("header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
+  }
+  #about {
+    background: #016052 url(../img/stream.jpg) no-repeat;
   }
 }
 
