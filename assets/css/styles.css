@@ -72,11 +72,14 @@
 
 header {
   display: flex;
-  position: absolute;
+  position: fixed;
   /* top: 0; */
   width: 100%;
-  min-height: 55px;
+  min-height: 75px;
   align-items: flex-end;
+  z-index: 777;
+  transition: all 0.5s ease;
+  padding-bottom: 1em;
 }
 .container {
   background-color: transparent;

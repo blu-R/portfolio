@@ -1,6 +1,8 @@
 const homeTitle = document.querySelector("#home h1");
 const homeSubtitle = document.querySelector("#home h2");
 const btnCheckWork = document.querySelector(".check-work");
+const banner = document.querySelector("header");
+const portfolioD = document.getElementById("portfolio-desc");
 
 function toggleNav() {
   const nav = document.getElementById("main-nav");
@@ -29,4 +31,14 @@ function scrollHideElements() {
   }
 }
 
+function bannerShadowed() {
+  let offsetPortfolioD = portfolioD.offsetTop;
+  if (window.scrollY > offsetPortfolioD - banner.offsetHeight) {
+    banner.classList.add("shadowed");
+  } else {
+    banner.classList.remove("shadowed");
+  }
+}
+
 document.addEventListener("scroll", scrollHideElements);
+document.addEventListener("scroll", bannerShadowed);

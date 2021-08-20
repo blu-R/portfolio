@@ -25,3 +25,18 @@
 .hidden {
   opacity: 0;
 }
+
+.shadowed {
+  /* color: var(--color-red-P); */
+  background-color: #fff;
+}
+.shadowed a {
+  color: var(--color-red-P);
+}
+.shadowed nav ul li a {
+  color: var(--color-red-P);
+}
+
+.shadowed i {
+  color: var(--color-red-P);
+}
