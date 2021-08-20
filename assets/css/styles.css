@@ -152,6 +152,7 @@ header {
   font-weight: 300;
   line-height: 1.30769em;
   transition: all 0.5s ease;
+  padding: 0;
 }
 
 #home .check-work {
@@ -568,6 +569,11 @@ footer .container {
   }
   #home h1 {
     font-size: 52px;
+    margin-top: 1.3333em;
+  }
+
+  #home h2 {
+    font-size: 1.625em;
   }
   #portfolio-desc h2 {
     font-size: 2.5em;
@@ -647,6 +653,10 @@ footer .container {
   #main-nav li {
     display: inline-block;
   }
+
+  #home .check-work {
+    width: 30%;
+  }
   .portfolio .info-container .on-behance {
     margin-left: 27.5%;
   }
@@ -665,10 +675,13 @@ footer .container {
     padding: 8.5em 0;
   }
   #home .check-work {
-    width: 30%;
+    width: 20%;
   }
   #home h1 {
     font-size: 71px;
+  }
+  #home h2 {
+    padding: 0 10%;
   }
   #portfolio-desc p {
     padding: 0 10%;
