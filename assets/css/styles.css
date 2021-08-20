@@ -162,11 +162,12 @@ header {
   margin: 1.875em auto 0 auto;
   font-size: 1em;
   padding: 1.5em 0;
-  transition-property: all;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
   /* align-self: center; */
+}
+
+#home .check-work:hover {
+  color: var(--color-red-P);
+  background-color: #fff;
 }
 
 /* || PORTFOLIO-DESCRIPTION SECTION */
@@ -258,14 +259,23 @@ header {
 .portfolio .info-container .see-online {
   margin: 1.875em 0 1.875em 10%;
 }
+.portfolio .info-container .see-online:hover {
+  color: #fff;
+  background-color: var(--color-red-P);
+}
 
 .portfolio .info-container .see-online,
 .portfolio .info-container .on-behance {
   color: #d24d57;
   border-color: #d24d57;
 }
+
 .portfolio .info-container .on-behance {
   margin: 1.875em 0 0 10%;
+}
+.portfolio .info-container .on-behance:hover {
+  color: #fff;
+  background-color: var(--color-red-P);
 }
 
 .portfolio .info-container .online-soon {
@@ -361,43 +371,24 @@ header {
   font-size: 1em;
   padding: 1.5em 0;
 }
+#contact #send-mail:hover {
+  color: var(--color-red-P);
+  background-color: #fff;
+}
 
+#contact #send-mail:hover .icon-mail {
+  color: var(--color-red-P);
+}
 .icon-mail {
   margin-right: 20px;
-  font-size: 1.625em;
+  font-size: 1.425em;
   position: absolute;
   width: 60px;
   height: 60px;
-  line-height: 60px;
+  line-height: 65px !important;
   top: 0;
   left: 0;
-  text-indent: 0;
-}
-
-.icon-twitter {
-  color: #00aced;
-  margin-right: 20px;
-  font-size: 1.625em;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  top: 0;
-  left: 0;
-  text-indent: 0;
-}
-
-.icon-dribbble {
-  color: #dd3174;
-  margin-right: 20px;
-  font-size: 1.625em;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  top: 0;
-  left: 0;
-  text-indent: 0;
+  text-indent: -4px;
 }
 
 .social-links-container {
@@ -411,10 +402,7 @@ header {
   width: 100%;
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
+  transition: all 0.5s ease-in-out;
   /* flex-grow: 1; */
 }
 
@@ -440,6 +428,32 @@ header {
 
 /* || FOOTER */
 
+.icon-twitter {
+  color: #00aced;
+  margin-right: 20px;
+  font-size: 1.625em;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 40px !important;
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
+
+.icon-dribbble {
+  color: #dd3174;
+  margin-right: 20px;
+  font-size: 1.625em;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 40px !important;
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
+
 footer {
   padding: 3.125em;
   font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
@@ -454,8 +468,9 @@ footer .container {
 }
 
 #copy {
+  margin: 1.5em auto 0.5 auto;
   width: 100%;
-  font-size: 0.875em;
+  font-size: 0.975em;
   text-transform: uppercase;
   text-align: center;
   color: rgba(255, 255, 255, 0.2);
@@ -470,33 +485,42 @@ footer .container {
   transition-timing-function: ease-in-out, ease;
   transition-delay: 0s, 0s;
 }
+#copy a:hover {
+  border-bottom: var(--color-red-P);
+}
 
-/* #follow-links {
-  width: 100%;
-} */
-/* #follow-links a {
-  background: rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  border: 2px solid transparent;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 0.5em 1em 0.5em 3em;
-  line-height: 2em;
-  font-size: 0.75em;
-  text-align: center;
-  border-radius: 4px;
-  transition-property: all, all;
-  transition-duration: 0.1s, 1s;
-  transition-timing-function: ease-in-out, ease;
-  transition-delay: 0s, 0s;
-  text-decoration: none;
+#footer .follow-links a {
+  width: 80%;
+  /* margin-bottom: 3em; */
   position: relative;
-} */
+  text-indent: 30px;
+  margin: 0.5em auto 0.5em auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75em;
+  padding: 1em 0;
+}
+
+#footer .container #twitter:hover {
+  color: #fff;
+  background-color: #00aced;
+}
+#footer .container #twitter:hover .icon-twitter {
+  color: #fff;
+}
+
+#footer .container #dribbble:hover {
+  color: #fff;
+  background-color: #dd3174;
+}
+#footer .container #dribbble:hover .icon-dribbble {
+  color: #fff;
+}
 
 #footer-about {
   width: 100%;
-  font-size: 1em;
-  /* padding: 0 10%; */
+  font-size: 0.875em;
+  padding: 0 10%;
   text-align: center;
   line-height: 1.4em;
   margin-top: 2em;
@@ -513,35 +537,11 @@ footer .container {
   transition-delay: 0s, 0s;
 }
 
-#footer .container #twitter {
-  width: 80%;
-  /* margin-bottom: 3em; */
-  position: relative;
-  text-indent: 30px;
-  margin: 2em auto 0.5em auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 0.845em;
-  padding: 1em 0;
-}
-
-#footer .container #dribbble {
-  width: 80%;
-  /* margin-bottom: 3em; */
-  position: relative;
-  text-indent: 30px;
-  margin: 0.5em auto 1.5em auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.2);
-
-  font-size: 0.845em;
-  padding: 1em 0;
-}
-
 @media (min-width: 639.98px) and (max-width: 1023.98px) {
   #home {
     background-image: url("../img/header-bg-1024.jpg");
   }
+
   #about {
     background: #016052 url(../img/stream-1024.jpg) no-repeat;
   }
@@ -554,6 +554,9 @@ footer .container {
   #about {
     background: #016052 url(../img/stream.jpg) no-repeat;
   }
+  /* #contact #send-mail {
+    width: 20%;
+  } */
 }
 
 @media (min-width: 639.98px) {
@@ -606,6 +609,9 @@ footer .container {
   #contact p {
     font-size: 1.375em;
   }
+  #contact #send-mail {
+    width: 40%;
+  }
   #social-links li {
     padding: 1.25em 0;
 
@@ -618,14 +624,18 @@ footer .container {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0 25px;
   }
-  /* #footer .container #twitter {
-    width: 40%;
+
+  #footer .follow-links a {
+    width: 210px;
   }
-  #footer .container #dribbble {
-    width: 45%;
-  } */
+
+  #footer .follow-links {
+    align-items: baseline;
+    max-width: 450px;
+  }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 767.98px) {
   .burguer-nav {
     display: none;
   }
@@ -646,7 +656,7 @@ footer .container {
     width: 22%;
   }
   #contact #send-mail {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -672,7 +682,10 @@ footer .container {
     margin-left: 47%;
   }
   #contact #send-mail {
-    width: 30%;
+    width: 20%;
+  }
+  #footer-about {
+    padding: 0 20%;
   }
   /* .portfolio .info-container .on-behance {
     margin-left: 32.5%;

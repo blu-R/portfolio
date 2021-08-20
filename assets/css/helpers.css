@@ -1,3 +1,10 @@
+/* COLORS */
+
+:root {
+  --color-red-P: #d24d57;
+  --color-green-S: #016052;
+}
+
 .pos-ab {
   position: absolute;
 }
@@ -13,4 +20,8 @@
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.hidden {
+  opacity: 0;
 }
