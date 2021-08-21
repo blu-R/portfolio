@@ -140,7 +140,8 @@ header {
 }
 
 #home h1 {
-  font-size: 43px;
+  line-height: 1;
+  font-size: 30px;
   margin-top: 2em;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -150,7 +151,7 @@ header {
 }
 #home h2 {
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1.15em;
   font-family: "MetaSerifPro", Georgia, serif;
   font-weight: 300;
   line-height: 1.30769em;
@@ -165,7 +166,7 @@ header {
   width: 80%;
   margin: 1.875em auto 0 auto;
   font-size: 1em;
-  padding: 1.5em 0;
+  padding: 1.2em 0;
   /* align-self: center; */
 }
 
@@ -563,6 +564,11 @@ footer .container {
   } */
 }
 
+@media (min-width: 479.98px) {
+  #home h1 {
+    font-size: 42px;
+  }
+}
 @media (min-width: 639.98px) {
   #home {
     padding: 6.5em 0;
@@ -712,6 +718,10 @@ footer .container {
   #home {
     background-size: cover;
     max-width: 100%;
+  }
+
+  #home h2 {
+    padding: 0 20%;
   }
   /* .portfolio .info-container .see-online,
   .portfolio .info-container .on-behance,
